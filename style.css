@@ -4,25 +4,28 @@
   }
   
   body {
-    background: #878ce9;
+    background: #B2A3FF;
   }
   
   .wrapper {
     height: 525px;
     width: 360px;
     color: white;
-    background: #2b2a38;
-    border-radius: 1rem;
+    background: #bb875a;
+    border-radius: 1.5rem;
     padding: 1.2rem;
     margin: 100px auto;
   }
   
   #topContainer {
-    margin-top: 4rem;
+    margin-top: -1rem;
+  }
+  #topContainer > h1 {
+    color: #fafafa;
   }
   
   .container {
-    margin-top: 1.4rem;
+    margin-top: 1.2rem;
   }
   
   .title {
@@ -31,7 +34,7 @@
   }
   
   .inputContainer {
-    background: #353959;
+    background: #0f0f13;
     border-radius: 1.4rem;
     padding: 0 0.8rem;
     display: flex;
@@ -75,6 +78,10 @@
   
   .buttonText {
     color: #353959 !important;
+
+  }
+  .buttonText:hover {
+    cursor: pointer;
   }
   
   .splitAmount {
@@ -96,4 +103,42 @@
   .total {
     font-size: 2rem;
   }
-  
+  /* Media queries for phones*/
+  @media only screen and (max-width: 480px) {
+    .wrapper {
+        height: 60vh;
+        width: 70vw;
+        color: white;
+        background: #b97f4c;
+        border-radius: 1.5rem;
+        padding: 1.2rem;
+        margin: 100px auto;
+      }
+      #topContainer > h1 {
+        color: #fafafa;
+        font-size: 6dvw;
+      }
+      
+  }
+
+  @media only screen and (max-width: 768px) {
+    .wrapper {
+        height: 60vh;
+        width: 70vw;
+        color: white;
+        background: #b97f4c;
+        border-radius: 1.5rem;
+        padding: 1.2rem;
+        margin: 100px auto;
+      }
+      #topContainer > h1 {
+        color: #fafafa;
+        font-size: 6dvw;
+      }
+      #people {
+        margin-left: 10px;
+      }
+      .title {
+        font-size: 1.2rem;
+      }
+  }
